@@ -1,0 +1,297 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.50;
+    color: #666666;
+    background-color: #ffffff;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    /* width: 90%; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.social {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.social ul li {
+    border-left: 1px solid #999999;
+}
+
+.active {
+    color: #e84c3d;
+}
+
+li {
+    display: inline;
+}
+
+header a {
+    text-decoration: none;
+    color: #666666;
+    background-color: transparent;
+    font-weight: bold;
+    padding: 14px 16px;
+}
+
+a:hover {
+    color: #e84c3d;
+}
+
+.header-left {
+    width: 30%;
+    float: left;
+}
+
+.menu {
+    float: left;
+    margin-top: 33px;
+}
+
+.icon {
+    display: none;
+}
+
+header .solugan {
+    font-style: italic;
+}
+
+.main-content .form {
+    width: 50%;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 90%;
+    height: 35px;
+    margin: 10px 0px 10px 0px;
+    padding-left: 8px;
+    font-size: 15px;
+}
+
+textarea {
+    width: 90%;
+    height: 130px;
+    margin: 10px 0px 10px 0px;
+    padding-left: 8px;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-content .map {
+    width: 100%;
+}
+
+.input {
+    position: relative;
+}
+
+.input_img {
+    position: absolute;
+    bottom: 2px;
+    right: 5px;
+    width: 24px;
+    height: 24px;
+}
+
+.btn {
+    text-align: center;
+    width: 140px;
+    height: 40px;
+    background-color: #e84c3d;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+hr.vertical {
+    width: 0px;
+    height: 50%;
+    /* or height in PX */
+}
+
+.info {
+    margin-left: 30px;
+    margin-top: 100px;
+}
+
+.info i {
+    margin-top: 15px;
+}
+
+.info a {
+    color: #e84c3d;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav {
+        position: relative;
+    }
+    .topnav a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav ul li a {
+        display: none;
+        text-align: left;
+    }
+}
+
+.footer .banner {
+    background-color: #f1f1f1;
+    width: 100%;
+    opacity: 80%;
+    height: 138px;
+}
+
+.footer .banner .content .image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    float: left;
+    margin-top: 20px;
+}
+
+.footer .banner .content .image img {
+    margin-left: 50px;
+}
+
+.footer .solugan {
+    color: #999999;
+    font-weight: 18px;
+}
+
+.main-footer {
+    height: 358px;
+    color: #999999;
+    padding-top: 50px;
+    background-color: #262626;
+}
+
+.bottom-footer {
+    background-color: #000000;
+    color: #666666;
+    height: 72px;
+}
+
+.htactive {
+    float: left;
+    width: 20%;
+}
+
+.contact {
+    float: left;
+    width: 20%;
+}
+
+.htactive ul {
+    margin-top: 30px;
+    margin-left: -46px;
+}
+
+.htactive a {
+    height: 100%;
+    width: 100%;
+    color: #333333;
+}
+
+.htactive li {
+    text-align: center;
+    padding: 0.9em 0.5em;
+    background: #FFFFFF;
+    color: #333333;
+    height: 30px;
+    line-height: 20px;
+    background-color: #262626;
+    border: 1px solid #666666;
+    border-radius: 50%;
+}
+
+.htactive li span {
+    width: 30px;
+}
+
+.htactive li:hover a {
+    color: #FFFFFF;
+}
+
+.footer .facebook:hover {
+    background: #003d99;
+}
+
+.footer .twitter:hover {
+    background: #0099ff;
+}
+
+.footer .skype:hover {
+    background: #0099ff;
+}
+
+.footer .linkin:hover {
+    background: #003d99;
+}
+
+.footer .google-plus:hover {
+    background: #ff3333;
+}
+
+.link {
+    width: 20%;
+}
+
+.link ul {
+    display: inline;
+}
+
+.link ul {
+    width: 250px;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+}
+
+.link li {
+    width: auto;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 1em;
+}
+
+.link li a {
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+.link li:hover {
+    color: #ff3333;
+}
+
+.connect {
+    float: right;
+}
