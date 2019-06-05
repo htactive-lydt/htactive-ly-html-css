@@ -5,51 +5,87 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
     <title>Contact HT Active</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href="script.js" />
+    <script src="script.js"></script>
 </head>
 
 <body>
 
 
-    <header>
-
+    <header id="myHeader">
         <div class="social">
-            <ul style="margin-top: 6px">
-                <li class="facebook"><a><span class="fa fa-facebook"></span></a></li>
-                <li class="twitter"><a><span class="fa fa-twitter"></span></a></li>
-                <li class="google-plus"><a><span class="fa fa-google-plus"></span></a></li>
-                <li class="skype"><a><span class="fa fa-skype"></span></a></li>
-                <li class="linkin"><a><span class="fa fa-linkedin-square"></span></a></li>
-            </ul>
-            <div class="translate">
-
+            <div class="social-content">
+                <div class="icon">
+                    <ul style="margin-top: 6px">
+                        <li class="twitter" style="height: 50px;">
+                            <a target="_blank" href="https://twitter.com/hoangvhh"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="skype"><a target="_blank" href="skype:hoangvhh"><i class="fa fa-skype"></i></a></li>
+                        <li class="linkedin">
+                            <a target="_blank" href="https://www.linkedin.com/in/hoang-pham-6236b8b7"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li class="googleplus">
+                            <a target="_blank" href="https://plus.google.com/u/0/117715430853979848085"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        <li class="youtube">
+                            <a target="_blank" href="http://www.youtube.com">
+                                <i class="fa fa-youtube-play"></i>
+                            </a>
+                        </li>
+                        <li class="flickr"><a target="_blank" href="https://www.flickr.com/photos/124606867@N06/"><i class="fa fa-flickr"></i></a></li>
+                        <li class="facebook">
+                            <a target="_blank" href="https://www.facebook.com/htactive"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="pinterest">
+                            <a target="_blank" href="https://www.pinterest.com/vhhoang/">
+                                <i class="fa fa-pinterest"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="translate">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                                <span><i class="fa fa-globe"></i></span>
+                                <span>English</span>
+                                <span><i class="fa fa-caret-down"></i></span>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">English</a>
+                            <a href="#">VietNamese</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="content">
-            <div class="header-left">
-                <div class="logo">
-                    <img src="img/logo_red.png" alt="Logo" width="200px" height="76.69px">
+        <div id="menu-hr">
+            <div class="menu-hr-content">
+                <div class="header-left">
+                    <div class="logo">
+                        <img src="img/logo_red.png" alt="Logo" width="200px" height="76.69px">
+                    </div>
+                    <div class="solugan">
+                        Your Satisfaction Is Our Success
+                    </div>
                 </div>
-                <div class="solugan">
-                    Your Satisfaction Is Our Success
-                </div>
-            </div>
 
-            <div class="menu topnav">
-                <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#service">SERVICE</a></li>
-                    <li><a href="#potfolios">PORFOLIOS</a></li>
-                    <li><a href="#blogs">BLOGS</a></li>
-                    <li><a href="#contact" class="active">CONTACT</a></li>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </ul>
+                <div class="menu topnav">
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#service">SERVICE</a></li>
+                        <li><a href="#potfolios">PORFOLIOS</a></li>
+                        <li><a href="#blogs">BLOGS</a></li>
+                        <li><a href="#contact" class="active">CONTACT</a></li>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -65,31 +101,35 @@
                 <form action="">
                     <h1>CONTACT</h1>
                     <p>If you need anything from us, please don't hesitate to contact with us via bellow form. We will contact you as soon as possible.</p>
-                    <div>
+                    <div class="form-parent">
                         <div>
                             <label for="name">Name:</label>
                         </div>
-                        <input type="text" placeholder="Please input your name" class="input">
+                        <input type="text" placeholder="Please input your name" class="name input">
+                        <i class="fa fa-user form-control-feedback"></i>
                     </div>
-                    <div>
+                    <div class="form-parent">
                         <div>
                             <label for="email">Email:</label>
                         </div>
-                        <input type="text" placeholder="Please input your email address">
+                        <input type="text" placeholder="Please input your email address" class="input">
+                        <i class="fa fa-envelope form-control-feedback"></i>
                     </div>
-                    <div>
+                    <div class="form-parent">
                         <div>
                             <label for="subject">Subject:</label>
                         </div>
-                        <input type="text" placeholder="Why can we do to assist you?">
+                        <input type="text" placeholder="Why can we do to assist you?" class="input">
+                        <i class="fa fa-bars form-control-feedback"></i>
                     </div>
-                    <div>
+                    <div class="form-parent">
                         <div>
                             <label for="message">Your message:</label>
                         </div>
-                        <textarea name="" id="" cols='30' placeholder="Please let's us know your idea"></textarea>
+                        <textarea name="" id="" cols='30' placeholder="Please let's us know your idea" class=""></textarea>
+                        <i class="fa fa-pencil form-control-feedback"></i>
                     </div>
-                    <button class="btn">SEND</button>
+                    <button class="btn-send">SEND</button>
                 </form>
 
             </div>
@@ -107,44 +147,52 @@
             </div>
         </div>
     </div>
+    <div id="scroll-top">
 
+        <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+    </div>
     <div class="footer">
         <div class="banner">
-            <div class="content">
-
+            <div class="banner-content">
                 <div class="image">
                     <img src="img/client-1.png" alt="">
                     <img src="img/client-2.png" alt="">
                     <img src="img/client-3.png" alt="">
                     <img src="img/client-4.png" alt="">
                 </div>
+
                 <div class="solugan">
-                    <br>
-                    <br>
                     <span><i class="fa fa-quote-left fa-2x"></i></span> &nbsp Design is not just what it looks like and feels like.<br>&nbsp &nbsp &nbsp &nbsp Design is how it works. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- Steve Job
                 </div>
             </div>
         </div>
+
         <div class="main-footer">
-            <div class="content">
+            <div style="width: 1200px; display: flex;
+            justify-content: space-around;">
+
                 <div class="htactive">
                     <div class="logo_footer">
                         <img src="img/logo_footer.png" alt="" width="130px" height="50px">
                     </div>
                     Your satisfaction is our success!
                     <ul class="htactiveSocial">
-                        <li class="facebook"><a><span class="fa fa-facebook"></span></a></li>
-                        <li class="twitter"><a><span class="fa fa-twitter"></span></a></li>
-                        <li class="google-plus"><a><span class="fa fa-google-plus"></span></a></li>
-                        <li class="skype"><a><span class="fa fa-skype"></span></a></li>
-                        <li class="linkin"><a><span class="fa fa-linkedin-square"></span></a></li>
+                        <li class="facebook"><span class="fa fa-facebook"></span></li>
+                        <li class="twitter"><span class="fa fa-twitter"></span></li>
+                        <li class="google-plus"><span class="fa fa-google-plus"></span></li>
+                        <li class="skype"><span class="fa fa-skype"></span></li>
+                        <li class="linkin"><span class="fa fa-linkedin-square"></span></li>
                     </ul>
+                    <div style="margin-top: 40px">
+                        <a href="#">About us<span> <i class="fa fa-arrow-right" aria-hidden="true"></i></span></a>
+                    </div>
+
                 </div>
                 <div class="contact">
                     <p> <span> <i class="fa fa-map-marker "></i></span> 63 Phan Đăng Lưu, Đà Nẵng</p>
                     <p> <span> <i class="fa fa-phone "></i></span> (+84) 905 610 229</p>
                     <p> <span> <i class="fa fa-mobile "></i></span> (+84) 905 610 229</p>
-                    <p> <span> <i class="fa fa-envelope "></i></span> recruit@htactive.com</p>
+                    <p> <span> <i class="fa fa-envelope "></i></span> <a>recruit@htactive.com</a></p>
                 </div>
                 <div class="link">
                     <h2>Links</h2>
@@ -163,7 +211,19 @@
             </div>
         </div>
         <div class="bottom-footer">
+            <div class="copyright">
+                Copyright © 2016 by HT Active. All Rights Reserved.
+            </div>
+            <div class="menu-bottom">
 
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Portfolios</a></li>
+                    <li><a href="">Blogs</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -171,6 +231,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+        $(window).scroll(function(event) {
+            if ($(document).scrollTop() > $("#menu-hr").scrollTop() + 50) {
+                $("#menu-hr").addClass("sticky");
+            } else {
+                $("#menu-hr").removeClass("sticky");
+            }
+
+            if ($(document).scrollTop() > 500) {
+                $('#scroll-top').fadeIn("slow");
+            } else {
+                $('#scroll-top').fadeOut("slow");
+            }
+        });
+
+        $("#scroll-top").click(function() {
+            $("html, body").animate({
+                scrollTop: 0
+            }, "slow");
+        });
+    </script>
 </body>
 
 </html>
